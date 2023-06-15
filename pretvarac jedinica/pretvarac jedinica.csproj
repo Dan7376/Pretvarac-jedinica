@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{064B268B-1866-408F-AAB0-AB3A16FA796E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pretvarac_jedinica</RootNamespace>
+    <AssemblyName>pretvarac jedinica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="brzinavala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brzinavala.Designer.cs">
+      <DependentUpon>brzinavala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmakceleracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmakceleracija.Designer.cs">
+      <DependentUpon>frmakceleracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbrzina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbrzina.Designer.cs">
+      <DependentUpon>frmbrzina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcm3todm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcm3todm3.Designer.cs">
+      <DependentUpon>frmcm3todm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcm3tom3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcm3tom3.Designer.cs">
+      <DependentUpon>frmcm3tom3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdm3tocm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdm3tocm3.Designer.cs">
+      <DependentUpon>frmdm3tocm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdm3tom3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdm3tom3.Designer.cs">
+      <DependentUpon>frmdm3tom3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgravitacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgravitacija.Designer.cs">
+      <DependentUpon>frmgravitacija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmm3tocm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmm3tocm3.Designer.cs">
+      <DependentUpon>frmm3tocm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmm3todm3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmm3todm3.Designer.cs">
+      <DependentUpon>frmm3todm3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="brzinavala.resx">
+      <DependentUpon>brzinavala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmakceleracija.resx">
+      <DependentUpon>frmakceleracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbrzina.resx">
+      <DependentUpon>frmbrzina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcm3todm3.resx">
+      <DependentUpon>frmcm3todm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcm3tom3.resx">
+      <DependentUpon>frmcm3tom3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdm3tocm3.resx">
+      <DependentUpon>frmdm3tocm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdm3tom3.resx">
+      <DependentUpon>frmdm3tom3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgravitacija.resx">
+      <DependentUpon>frmgravitacija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmm3tocm3.resx">
+      <DependentUpon>frmm3tocm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmm3todm3.resx">
+      <DependentUpon>frmm3todm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon %281%29.ico" />
+    <None Include="Resources\board-5599231_640.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
